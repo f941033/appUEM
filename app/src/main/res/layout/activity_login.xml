@@ -27,7 +27,8 @@
         android:textColor="@android:color/white"
         android:textColorHint="@android:color/white"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="16dp" />
+        tools:layout_editor_absoluteY="16dp"
+        <requestFocus />
 
     <EditText
         android:id="@+id/passwordField"
