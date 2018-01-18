@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">appUEM</string>
+    <string name="username_Hint">Username</string>
+    <string name="password_Hint">Password</string>
+    <string name="login_button_label">Login</string>
+    <string name="sign_up_text">Sign Up!</string>
+</resources>
