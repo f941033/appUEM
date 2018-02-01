@@ -6,4 +6,9 @@
     <string name="sign_up_text">Don\'t have an account? Sign Up!</string>
     <string name="image_description">imagen de fondo</string>
     <string name="subtitle">A Treehouse Project</string>
+    <string name="email_hit">Email</string>
+    <string name="sign_up_button_label">SIGN UP</string>
+    <string name="cancel_button_label">CANCEL</string>
+
+
 </resources>
