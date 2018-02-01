@@ -15,6 +15,7 @@ public class SplashActivity extends AppCompatActivity implements Animation.Anima
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+        getSupportActionBar().hide();
 
         //TextView myTitle = (TextView)findViewById(R.id.Title);
         View myImage = findViewById(R.id.imageView);

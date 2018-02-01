@@ -12,7 +12,7 @@
         <item name="android:background">@drawable/background_fill</item>
     </style>
 
-     <style name="Ribbit_EditText" parent="android:Widget.Holo.Light.EditText">
+     <style name="Ribbit_EditText" >
         <item name="android:layout_width">match_parent</item>
          <item name="android:layout_height">wrap_content</item>
          <item name="android:layout_alignParentTop">true</item>

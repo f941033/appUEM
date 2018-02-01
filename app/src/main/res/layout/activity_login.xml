@@ -100,11 +100,11 @@
         android:layout_below="@id/loginButton"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="12dp"
+        android:onClick="mostrarVentana"
         android:text="@string/sign_up_text"
         android:textColor="@android:color/white"
         tools:layout_editor_absoluteX="154dp"
-        tools:layout_editor_absoluteY="234dp"
-        android:onClick="mostrarVentana"/>
+        tools:layout_editor_absoluteY="234dp" />
 
 
 

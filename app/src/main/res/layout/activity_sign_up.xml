@@ -115,8 +115,8 @@
         android:layout_marginRight="16dp"
         android:layout_toRightOf="@id/buttonDivider"
         android:background="@drawable/button_custom"
-        android:onClick="cerrarVentana"
 
+        android:onClick="cerrarVentana"
         android:text="@string/cancel_button_label"
         android:textColor="@color/text_color"
         android:textSize="13sp" />
