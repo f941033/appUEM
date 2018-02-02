@@ -16,15 +16,16 @@
         app:srcCompat="@drawable/ic_launcher" />
 
     <TextView
-        android:text="Splash it!"
+        android:id="@+id/Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView"
         android:layout_centerHorizontal="true"
-        android:id="@+id/Title"
-        android:textStyle="bold"
-        android:layout_marginTop="30dp"
         android:layout_marginBottom="10dp"
-        android:textSize="40sp" />
+        android:layout_marginTop="30dp"
+        android:text="Splash it!"
+        android:textColor="@color/text_color"
+        android:textSize="40sp"
+        android:textStyle="bold" />
 
 </RelativeLayout>

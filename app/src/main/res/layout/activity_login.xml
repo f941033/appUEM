@@ -60,9 +60,10 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="@string/username_Hint"
-            android:textColor="@android:color/white"
+            android:textColor="@color/text_color"
             android:textColorHint="@color/light_gray"
             android:textSize="17sp">
+
             <requestFocus />
         </EditText>
 
@@ -88,7 +89,6 @@
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:background="@drawable/button_custom"
-
         android:text="@string/login_button_label"
         android:textColor="@color/text_color"
         android:textSize="13sp" />

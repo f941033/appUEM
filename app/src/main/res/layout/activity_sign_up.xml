@@ -56,9 +56,11 @@
 
         <EditText
             android:id="@+id/userNameField"
+            style="@style/Ribbit_EditText"
             android:hint="@string/username_Hint"
             android:inputType="textPersonName"
-            style="@style/Ribbit_EditText">
+            android:textColor="@color/text_color">
+
             <requestFocus />
         </EditText>
 
