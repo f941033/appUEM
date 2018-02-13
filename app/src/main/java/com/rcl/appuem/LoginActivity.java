@@ -16,7 +16,8 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         //getActionBar().hide();
         getSupportActionBar().hide();
-/*
+
+        /* OTRA FORMA DE ASIGNAR FUNCIONALIDAD A UN BOTÓN
         mSignUpTextView = (TextView)findViewById(R.id.SignUpText);
         mSignUpTextView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -24,8 +25,8 @@ public class LoginActivity extends AppCompatActivity {
                 Intent intent=new Intent(LoginActivity.this, SignUpActivity.class);
                 startActivity(intent);
             }
-        });*/
-
+        });
+        */
 
     }
 
