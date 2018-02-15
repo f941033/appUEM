@@ -11,4 +11,42 @@
     <string name="cancel_button_label">CANCEL</string>
     <string name="title">Title</string>
     <string name="action_settings">Settings</string>
+
+    <string name="add_button">Añadir</string>
+    <string name="update_button">Actualizar</string>
+    <string name="delete_button">borrar</string>
+
+
+    <string-array name="names_array">
+        <item>Miguel</item>
+        <item>Juliana</item>
+        <item>Cristobal</item>
+        <item>Amy</item>
+        <item>Jason</item>
+        <item>Melissa</item>
+        <item>David</item>
+        <item>Michelle</item>
+        <item>James</item>
+        <item>Kimberly</item>
+        <item>Juan</item>
+        <item>Lisa</item>
+        <item>Roberto</item>
+        <item>Ángela</item>
+        <item>Brian</item>
+        <item>Ricardo</item>
+        <item>Christina</item>
+        <item>Scott</item>
+        <item>Amanda</item>
+        <item>Mark</item>
+        <item>Julie</item>
+        <item>Mary</item>
+        <item>Jeffrey</item>
+        <item>Kelly</item>
+        <item>Enrique</item>
+        <item>Rebeca</item>
+        <item>Kevin</item>
+        <item>Elisabeth</item>
+        <item>Daniel</item>
+        <item>Jessica</item>
+    </string-array>
 </resources>

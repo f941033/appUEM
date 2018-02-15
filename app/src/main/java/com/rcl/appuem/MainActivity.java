@@ -1,6 +1,7 @@
 package com.rcl.appuem;
 
 import android.content.Intent;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.ContextMenu;
@@ -16,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     //private Toolbar toolbar;
 
+    private SwipeRefreshLayout swipeLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,12 +34,26 @@ public class MainActivity extends AppCompatActivity {
         //intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);
 
+        // cast a la vista a la que aplicamos un menu contextual y la registramos
         TextView mycontext = (TextView) findViewById(R.id.textTap);
         registerForContextMenu(mycontext);
 
+        // cast al Layout SwipeRefresh con el que rodeamos la vista en el xml y le colocamos un listener
+        swipeLayout = (SwipeRefreshLayout) findViewById(R.id.myswipe);
+        swipeLayout.setOnRefreshListener(mOnRefreshListener);
+
+
     }
 
-
+    //    construimos el Listener que lanza un Toast y desactiva a continuación del Swipe la animación
+    protected SwipeRefreshLayout.OnRefreshListener mOnRefreshListener = new SwipeRefreshLayout.OnRefreshListener() {
+        @Override
+        public void onRefresh() {
+            Toast toast0 = Toast.makeText(MainActivity.this, "going swipeREFRESH", Toast.LENGTH_LONG);
+            toast0.show();
+            swipeLayout.setRefreshing(false);
+        }
+    };
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -95,7 +111,10 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-
+    public void siguientePantalla(View view){
+        Intent intent = new Intent(this, ListaActivity.class);
+        startActivity(intent);
+    }
 
 }
 
