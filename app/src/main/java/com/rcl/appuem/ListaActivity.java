@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.support.v4.util.Pair;
 import android.view.View;
 
 import java.util.ArrayList;
@@ -84,5 +85,39 @@ public class ListaActivity extends AppCompatActivity {
     }
 
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        //Log.d(DEBUG_TAG, "requestCode is " + requestCode);
+        // if adapter.getItemCount() is request code, that means we are adding a new position
+        // anything less than adapter.getItemCount() means we are editing a particular position
+        if (requestCode == adapter.getItemCount()) {
+            if (resultCode == RESULT_OK) {
+                // Make sure the Add request was successful
+                // if add name, insert name in list
+                String name = data.getStringExtra(EXTRA_NAME);
+                int color = data.getIntExtra(EXTRA_COLOR, 0);
+                adapter.addCard(name, color);
+            }
+        } else {
+            // Anything other than adapter.getItemCount() means editing a particular list item
+            // the requestCode is the list item position
+            if (resultCode == RESULT_OK) {
+                // Make sure the Update request was successful
+                RecyclerView.ViewHolder viewHolder = recyclerView.findViewHolderForAdapterPosition(requestCode);
+                if (data.getExtras().getBoolean(EXTRA_DELETE, false)) {
+                    // if delete user delete
+                    // The user deleted a contact
+                    adapter.deleteCard(viewHolder.itemView, requestCode);
+                } else if (data.getExtras().getBoolean(EXTRA_UPDATE)) {
+                    // if name changed, update user
+                    String name = data.getStringExtra(EXTRA_NAME);
+                    viewHolder.itemView.setVisibility(View.INVISIBLE);
+                    adapter.updateCard(name, requestCode);
+                }
+            }
+        }
+    }
 
 }

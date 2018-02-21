@@ -36,6 +36,29 @@
                 android:textSize="36sp"
                 android:layout_marginTop="200dp"/>
 
+        <!--    <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/avatar"
+                app:civ_border_color="#EEEEEE"
+                app:civ_border_width="4dp"
+                app:civ_shadow="true"
+                app:civ_shadow_radius="10"
+                app:civ_shadow_color="#763ab7"
+                android:layout_gravity="center"/> -->
+            
+            <com.mikhaellopez.circularfillableloaders.CircularFillableLoaders
+                android:id="@+id/circularFillableLoaders"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/avatar"
+                app:cfl_border="true"
+                app:cfl_border_width="4dp"
+                app:cfl_progress="80"
+                app:cfl_wave_amplitude="0.06"
+                app:cfl_wave_color="#763ab7"
+                android:layout_gravity="center"/>
+
 
             <TextView
                 android:id="@+id/textTap"
@@ -44,7 +67,7 @@
                 android:layout_below="@id/imageLayout"
                 android:layout_centerHorizontal="true"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="300dp"
+                android:layout_marginTop="350dp"
                 android:text="Tap for Context Menu"
                 android:textColor="#673AB7" />
 
@@ -52,8 +75,9 @@
                 android:id="@+id/floatingActionButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="400dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="450dp"
+                android:layout_marginRight="20dp"
                 android:clickable="true"
                 android:onClick="siguientePantalla"
                 android:src="@drawable/buffer"

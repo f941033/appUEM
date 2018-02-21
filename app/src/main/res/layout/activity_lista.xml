@@ -29,5 +29,5 @@
         android:tint="@android:color/white"
         android:transitionName="fab_transition"
         app:srcCompat="@drawable/apptheme_btn_default_normal_holo_light" />
-    <!--  app:backgroundTint="@color/colorPrimary"-->
+
 </RelativeLayout>
